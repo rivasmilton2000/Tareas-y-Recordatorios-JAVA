@@ -1,0 +1,179 @@
+/* Iconos de tarjetas principales. */
+.card-icon {
+    -fx-fill: transparent;
+    -fx-stroke: #1F4A7A;
+    -fx-stroke-width: 2.5;
+}
+/* Iconos del panel lateral. */
+.card-icon-sidebar {
+    -fx-fill: transparent;
+    -fx-stroke: #ffffff;
+    -fx-stroke-width: 2.5;
+}
+/* Iconos de la barra superior */
+.topbar-icon {
+    -fx-fill: transparent;
+    -fx-stroke: #0B2745;
+    -fx-stroke-width: 2;
+}
+/* Panel lateral */
+.sidebar {
+    -fx-background-color: linear-gradient(to bottom, #071E38 0%, #0B2745 45%, #1F4A7A 100%);
+    -fx-border-color: #000000;
+    -fx-border-width: 0 1 0 0;
+}
+.text-title {
+    -fx-font-size: 27px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI";
+    -fx-text-fill: #FFFFFF;
+}
+/* Barra superior */
+.topbar {
+    -fx-background-color: linear-gradient(to bottom, #FFFFFF 0%, #EDEDED 100%);
+    -fx-border-color: #000000;
+    -fx-border-width: 0 0 1 0;
+}
+/* Pie de página */
+.footer {
+    -fx-background-color: linear-gradient(to bottom, #F4F4F4 0%, #FFFFFF 100%);
+    -fx-border-color: #000000;
+    -fx-border-width: 1 0 0 0;
+}
+.text-footer {
+    -fx-text-fill: #0B2745;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI";
+}
+/* Boton de la barra superior */
+.topbar-button {
+    -fx-background-color: linear-gradient(to bottom, #0B2745 0%, #1F4A7A 100%);
+    -fx-border-color: #000000;
+    -fx-border-width: 1;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-font-weight: bold;
+}
+
+.topbar-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #12365F 0%, #27598E 100%);
+    -fx-cursor: hand;
+}
+
+.topbar-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #071E38 0%, #163A6B 100%);
+}
+/* Fondo principal */
+.main-background {
+    -fx-background-color: linear-gradient(to bottom, #FFFFFF 0%, #F8F9FA 100%);
+}
+/* Estilo de las tarjetas */
+.card {
+    -fx-background-color: linear-gradient(to bottom, #FFFFFF 0%, #F6F7F8 100%);
+    -fx-border-color: #111111;
+    -fx-border-width: 1;
+}
+/* Estilo de las líneas del panel lateral */
+.sidebar-line {
+    -fx-stroke: #4C6F96;
+    -fx-stroke-width: 1;
+}
+/* Estilo de las tarjetas de opción */
+.option-card {
+    -fx-background-color: linear-gradient(to bottom, #FFFFFF 0%, #F4F7FA 100%);
+    -fx-border-color: #111111;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(11,39,69,0.14), 5, 0, 0, 2);
+}
+/* Estilo de los iconos de opción */
+.option-icon {
+    -fx-fill: transparent;
+    -fx-stroke: #1F4A7A;
+    -fx-stroke-width: 2.5;
+}
+
+/* Estilo de los botones de opción */
+.option-button {
+    -fx-background-color: linear-gradient(to bottom, #F4F8FC 0%, #C9DCEF 100%);
+    -fx-border-color: #0B2745;
+    -fx-border-width: 1;
+    -fx-text-fill: #0B2745;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.option-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #EAF2FA 0%, #BFD5EA 100%);
+    -fx-cursor: hand;
+}
+
+.option-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #BFD5EA 0%, #F4F8FC 100%);
+}
+
+/* Estilo de la lista de actividades */
+.activity-list {
+    -fx-background-color: #FFFFFF;
+    -fx-control-inner-background: #FFFFFF;
+    -fx-border-color: #C9D3DD;
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 6;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 14px;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* Celdas */
+.activity-list .list-cell {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 14 18 14 18;
+    -fx-border-color: transparent transparent #E1E6EB transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* Celdas vacías */
+.activity-list .list-cell:empty {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: transparent;
+}
+
+/* Hover */
+.activity-list .list-cell:hover {
+    -fx-background-color: #F4F8FC;
+}
+
+/* Seleccionada */
+.activity-list .list-cell:selected {
+    -fx-background-color: #EAF2FA;
+}
+
+.sidebar-label {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+/* Scroll vertical  */
+.activity-list .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 10;
+}
+
+.activity-list .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
+
+.activity-list .scroll-bar:vertical .thumb {
+    -fx-background-color: #AFC0D1;
+    -fx-background-radius: 8;
+}
+
+.activity-list .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #8FA8C0;
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1080.0" maxWidth="1920.0" minHeight="1080.0" minWidth="1920.0" prefHeight="1080.0" prefWidth="1920.0" styleClass="main-background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.InicioController">
+   <rotationAxis>
+      <Point3D />
+   </rotationAxis>
+   <padding>
+      <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+   </padding>
+   <children>
+      <AnchorPane layoutX="700.0" layoutY="350.0" prefHeight="380.0" prefWidth="520.0" styleClass="option-card">
+         <children>
+            <SVGPath content="M16 7h.01 M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20 M20 7l2 .5-2 .5 M10 18v3 M14 17.75V21 M7 18a6 6 0 0 0 3.84-10.61" layoutX="184.0" layoutY="26.0" scaleX="1.15" scaleY="1.15" strokeLineCap="round" strokeLineJoin="round" styleClass="topbar-icon" />
+            <Text layoutX="230.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="brand-title" text="TaskMind">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="45.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="main-description" text="Para iniciar en el sistema, crea una cuenta o inicia sesión." textAlignment="CENTER" wrappingWidth="430.0">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Button layoutX="149.0" layoutY="138.0" onAction="#irRegistro" mnemonicParsing="false" prefHeight="35.0" prefWidth="222.0" styleClass="topbar-button" text="Crear cuenta" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="18.0" />
+               </font>
+            </Button>
+            <Line endX="95.0" layoutX="149.0" layoutY="210.0" startX="0.0" strokeWidth="2.0" styleClass="separator-line" />
+            <Text layoutX="255.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="or-text" text="ó">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Line endX="95.0" layoutX="276.0" layoutY="210.0" startX="0.0" strokeWidth="2.0" styleClass="separator-line" />
+            <Button layoutX="149.0" layoutY="244.0" onAction="#irLogin" mnemonicParsing="false" prefHeight="35.0" prefWidth="222.0" styleClass="topbar-button" text="Iniciar sesión" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
+

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<AnchorPane fx:id="root" minHeight="720.0" minWidth="1024.0" prefHeight="900.0" prefWidth="1440.0" styleClass="main-background" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ActividadController">
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <ScrollPane fitToWidth="true" hbarPolicy="NEVER" styleClass="sidebar-scroll">
+               <content>
+                  <VBox fillWidth="true" prefWidth="272.0" spacing="14.0" styleClass="sidebar">
+                     <padding>
+                        <Insets bottom="20.0" left="16.0" right="16.0" top="20.0" />
+                     </padding>
+                     <children>
+                        <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="sidebar-brand">
+                           <children>
+                              <SVGPath content="M16 7h.01 M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20 M20 7l2 .5-2 .5 M10 18v3 M14 17.75V21 M7 18a6 6 0 0 0 3.84-10.61" scaleX="1.15" scaleY="1.15" styleClass="card-icon-sidebar" />
+                              <Label styleClass="text-title" text="TaskMind" />
+                           </children>
+                        </HBox>
+
+                        <Separator styleClass="sidebar-separator" />
+
+                        <VBox spacing="10.0" styleClass="sidebar-section">
+                           <children>
+                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionDesdeBoton" styleClass="sidebar-button" text="Inicio" wrapText="true" />
+                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionDesdeBoton" styleClass="sidebar-button" text="Crear Actividad" wrapText="true" />
+                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionDesdeBoton" styleClass="sidebar-button" text="Editar actividad" wrapText="true" />
+                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionDesdeBoton" styleClass="sidebar-button" text="Compartir actividad" wrapText="true" />
+                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionDesdeBoton" styleClass="sidebar-button" text="Eliminar Actividad" wrapText="true" />
+                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionDesdeBoton" styleClass="sidebar-button" text="Mostrar Actividad" wrapText="true" />
+                           </children>
+                        </VBox>
+
+                        <Separator styleClass="sidebar-separator" />
+
+                        <VBox spacing="10.0" styleClass="sidebar-section">
+                           <children>
+                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionDesdeBoton" styleClass="sidebar-button" text="Filtrar tarea por estado" wrapText="true" />
+                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionDesdeBoton" styleClass="sidebar-button" text="Ordenar recordatorio por fecha" wrapText="true" />
+                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionDesdeBoton" styleClass="sidebar-button" text="Ordenar actividades por prioridad" wrapText="true" />
+                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionDesdeBoton" styleClass="sidebar-button" text="Actividades compartidas" wrapText="true" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </left>
+         <center>
+            <BorderPane>
+               <top>
+                  <HBox alignment="CENTER_LEFT" spacing="12.0" styleClass="topbar menu-topbar">
+                     <children>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" onAction="#accionDesdeBoton" prefWidth="170.0" styleClass="topbar-chip-button" text="Notificaciones" />
+                        <Button mnemonicParsing="false" onAction="#accionDesdeBoton" prefWidth="150.0" styleClass="topbar-chip-button" text="Usuario" />
+                        <Button mnemonicParsing="false" onAction="#accionDesdeBoton" prefWidth="180.0" styleClass="topbar-button" text="Cerrar sesion" />
+                     </children>
+                     <padding>
+                        <Insets bottom="12.0" left="24.0" right="24.0" top="12.0" />
+                     </padding>
+                  </HBox>
+               </top>
+               <center>
+                  <ScrollPane fitToWidth="true" hbarPolicy="NEVER" styleClass="content-scroll">
+                     <content>
+                        <VBox spacing="22.0" styleClass="menu-content">
+                           <children>
+                              <VBox spacing="8.0">
+                                 <children>
+                                    <Label styleClass="menu-title" text="Notificaciones" />
+                                    <Label styleClass="menu-description" text="Aqui veras los recordatorios cuya fecha y hora ya se cumplieron." wrapText="true" />
+                                 </children>
+                              </VBox>
+
+                              <VBox spacing="16.0" styleClass="option-card">
+                                 <children>
+                                    <Label styleClass="summary-title" text="Recordatorios pendientes" />
+                                    <ListView fx:id="listNotificaciones" prefHeight="520.0" styleClass="activity-list" VBox.vgrow="ALWAYS">
+                                       <placeholder>
+                                          <Label styleClass="summary-value" text="No hay notificaciones pendientes." />
+                                       </placeholder>
+                                    </ListView>
+                                    <HBox alignment="CENTER_RIGHT">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#accionDesdeBoton" prefHeight="34.0" prefWidth="220.0" styleClass="option-button" text="Eliminar notificacion" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="18.0" left="18.0" right="18.0" top="18.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="28.0" left="32.0" right="32.0" top="28.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </center>
+               <bottom>
+                  <HBox alignment="CENTER" styleClass="footer menu-footer">
+                     <children>
+                        <Label styleClass="text-footer" text="© 2026 TaskMind" />
+                     </children>
+                     <padding>
+                        <Insets bottom="12.0" left="20.0" right="20.0" top="12.0" />
+                     </padding>
+                  </HBox>
+               </bottom>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <stylesheets>
+      <URL value="@menu.css" />
+      <URL value="@actividad.css" />
+   </stylesheets>
+</AnchorPane>

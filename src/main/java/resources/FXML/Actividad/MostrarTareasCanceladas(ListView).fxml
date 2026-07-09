@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="1080.0" maxWidth="1920.0" minHeight="1080.0" minWidth="1920.0" prefHeight="1080.0" prefWidth="1920.0" styleClass="s" stylesheets="@actividad.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ActividadController">
+   <children>
+      <AnchorPane maxHeight="1080.0" maxWidth="1920.0" minHeight="1080.0" minWidth="1920.0" prefHeight="1080.0" prefWidth="1920.0" styleClass="main-background">
+         <children>
+            <AnchorPane prefHeight="1083.0" prefWidth="328.0" styleClass="sidebar">
+               <children>
+                  <SVGPath content="M16 7h.01 M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20 M20 7l2 .5-2 .5 M10 18v3 M14 17.75V21 M7 18a6 6 0 0 0 3.84-10.61" fill="transparent" layoutX="21.0" layoutY="11.0" scaleX="1.15" scaleY="1.15" stroke="#111111" strokeLineCap="round" strokeLineJoin="round" strokeWidth="2.0" styleClass="card-icon-sidebar" />
+                  <Label layoutX="102.0" layoutY="8.0" styleClass="text-title" text="TaskMind" />
+
+                  <VBox layoutX="20.0" layoutY="93.0" prefWidth="300.0" spacing="34.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" spacing="18.0">
+                           <children>
+                              <SVGPath content="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8 M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="transparent" stroke="BLACK" strokeLineCap="round" strokeLineJoin="round" strokeWidth="2.0" styleClass="card-icon-sidebar" />
+                              <Label text="Inicio" textFill="WHITE"><font><Font name="Segoe UI Bold" size="16.0" /></font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="18.0">
+                           <children>
+                              <SVGPath content="M9 2H15A1 1 0 0 1 16 3V5A1 1 0 0 1 15 6H9A1 1 0 0 1 8 5V3A1 1 0 0 1 9 2Z M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2 M9 14h6 M12 17v-6" fill="TRANSPARENT" fillRule="EVEN_ODD" stroke="BLACK" strokeLineCap="round" strokeLineJoin="round" strokeWidth="2.0" styleClass="card-icon-sidebar" />
+                              <Label text="Crear Actividad" textFill="WHITE"><font><Font name="Segoe UI Bold" size="16.0" /></font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="18.0">
+                           <children>
+                              <SVGPath content="M16 4h2a2 2 0 0 1 2 2v2 M21.34 15.664a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z M8 22H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2 M9 2H15A1 1 0 0 1 16 3V5A1 1 0 0 1 15 6H9A1 1 0 0 1 8 5V3A1 1 0 0 1 9 2Z" fill="transparent" stroke="BLACK" strokeLineCap="round" strokeLineJoin="round" strokeWidth="2.0" styleClass="card-icon-sidebar" />
+                              <Label text="Editar actividad" textFill="WHITE"><font><Font name="Segoe UI Bold" size="16.0" /></font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="18.0">
+                           <children>
+                              <SVGPath content="M11 14h10 M16 4h2a2 2 0 0 1 2 2v1.344 M17 18l4-4-4-4 M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 1.793-1.113 M9 2H15A1 1 0 0 1 16 3V5A1 1 0 0 1 15 6H9A1 1 0 0 1 8 5V3A1 1 0 0 1 9 2Z" fill="transparent" stroke="#111111" strokeLineCap="round" strokeLineJoin="round" strokeWidth="2.0" styleClass="card-icon-sidebar" />
+                              <Label text="Compartir actividad" textFill="WHITE"><font><Font name="Segoe UI Bold" size="16.0" /></font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="18.0">
+                           <children>
+                              <SVGPath content="M9 2H15A1 1 0 0 1 16 3V5A1 1 0 0 1 15 6H9A1 1 0 0 1 8 5V3A1 1 0 0 1 9 2Z M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2 M15 11l-6 6 M9 11l6 6" fill="transparent" stroke="#111111" strokeLineCap="round" strokeLineJoin="round" strokeWidth="2.0" styleClass="card-icon-sidebar" />
+                              <Label text="Eliminar Actividad" textFill="WHITE"><font><Font name="Segoe UI Bold" size="16.0" /></font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="18.0">
+                           <children>
+                              <SVGPath content="M9 2H15A1 1 0 0 1 16 3V5A1 1 0 0 1 15 6H9A1 1 0 0 1 8 5V3A1 1 0 0 1 9 2Z M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2 M12 11h4 M12 16h4 M8 11h.01 M8 16h.01" fill="transparent" stroke="#111111" strokeLineCap="round" strokeLineJoin="round" strokeWidth="2.0" styleClass="card-icon-sidebar" />
+                              <Label text="Mostrar Actividad" textFill="WHITE"><font><Font name="Segoe UI Bold" size="16.0" /></font></Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+
+                  <VBox layoutX="16.0" layoutY="428.0" prefWidth="300.0" spacing="34.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" spacing="18.0">
+                           <children>
+                              <SVGPath content="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z" fill="transparent" stroke="#111111" strokeLineCap="round" strokeLineJoin="round" strokeWidth="2.0" styleClass="card-icon-sidebar" />
+                              <Label text="Filtrar tarea por estado" textFill="WHITE"><font><Font name="Segoe UI Bold" size="16.0" /></font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="18.0">
+                           <children>
+                              <SVGPath content="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z" fill="transparent" stroke="#111111" strokeLineCap="round" strokeLineJoin="round" strokeWidth="2.0" styleClass="card-icon-sidebar" />
+                              <Label text="Ordenar recordatorio por fecha" textFill="WHITE"><font><Font name="Segoe UI Bold" size="16.0" /></font></Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="18.0">
+                           <children>
+                              <SVGPath content="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z" fill="transparent" stroke="#111111" strokeLineCap="round" strokeLineJoin="round" strokeWidth="2.0" styleClass="card-icon-sidebar" />
+                              <Label text="Ordenar actividades por prioridad" textFill="WHITE"><font><Font name="Segoe UI Bold" size="16.0" /></font></Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+
+                  <HBox alignment="CENTER_LEFT" layoutX="17.0" layoutY="601.0" spacing="18.0">
+                     <children>
+                        <SVGPath content="M11 17l2 2a1 1 0 1 0 3-3 M14 14l2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4 M21 3l1 11h-2 M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3 M3 4h8" fill="transparent" stroke="#111111" strokeLineCap="round" strokeLineJoin="round" strokeWidth="2.0" styleClass="card-icon-sidebar" />
+                        <Label text="Actividades compartidas" textFill="WHITE"><font><Font name="Segoe UI Bold" size="16.0" /></font></Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+
+            <AnchorPane layoutX="328.0" prefHeight="47.0" prefWidth="1592.0" styleClass="topbar">
+               <children>
+                  <Button layoutX="1040.0" layoutY="5.0" prefHeight="34.0" prefWidth="220.0" styleClass="topbar-button" text="Cerrar sesión"><font><Font name="Segoe UI Bold" size="14.0" /></font></Button>
+                  <SVGPath content="M10.268 21a2 2 0 0 0 3.464 0 M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" fill="transparent" layoutX="1280.0" layoutY="13.0" stroke="#111111" strokeLineCap="round" strokeLineJoin="round" strokeWidth="2.0" styleClass="topbar-icon" />
+                  <Label layoutX="1311.0" layoutY="15.0" text="Notificaciones" textFill="#0b2745"><font><Font name="Segoe UI Bold" size="15.0" /></font></Label>
+                  <SVGPath content="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2 M12 3a4 4 0 1 1 0 8a4 4 0 1 1 0-8" fill="transparent" layoutX="1430.0" layoutY="13.0" stroke="#111111" strokeLineCap="round" strokeLineJoin="round" strokeWidth="2.0" styleClass="topbar-icon" />
+                  <Label layoutX="1461.0" layoutY="15.0" text="Usuario" textFill="#0b2745"><font><Font name="Segoe UI Bold" size="15.0" /></font></Label>
+               </children>
+            </AnchorPane>
+
+            <AnchorPane layoutX="357.0" layoutY="75.0" prefHeight="930.0" prefWidth="1510.0">
+               <children>
+                  <Label layoutX="0.0" layoutY="0.0" text="Filtrar tarea por estado">
+                     <font><Font name="Segoe UI Bold" size="28.0" /></font>
+                  </Label>
+                  <Label layoutX="0.0" layoutY="52.0" text="Visualiza las tareas con estado cancelado.">
+                     <font><Font name="Segoe UI" size="16.0" /></font>
+                  </Label>
+                  <Label layoutX="0.0" layoutY="115.0" text="Tareas canceladas">
+                     <font><Font name="Segoe UI Bold" size="24.0" /></font>
+                  </Label>
+                  <Separator layoutX="0.0" layoutY="156.0" prefWidth="1460.0" styleClass="section-separator" />
+
+                  <ListView fx:id="listTareasCanceladas" layoutX="0.0" layoutY="174.0" prefHeight="285.0" prefWidth="1460.0" styleClass="activity-list">
+                     <placeholder>
+                        <AnchorPane prefHeight="220.0" prefWidth="1440.0" style="-fx-border-color: #000000; -fx-background-color: #FFFFFF;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="0.0" layoutY="6.0" prefHeight="24.0" prefWidth="1440.0" text="Título de tarea">
+                                 <font><Font name="Segoe UI Bold" size="15.0" /></font>
+                              </Label>
+                              <Separator layoutX="0.0" layoutY="38.0" prefWidth="1440.0" />
+                              <Label layoutX="18.0" layoutY="57.0" text="ID:"><font><Font name="Segoe UI" size="14.0" /></font></Label>
+                              <Label layoutX="18.0" layoutY="91.0" text="Descripción:"><font><Font name="Segoe UI" size="14.0" /></font></Label>
+                              <Label layoutX="18.0" layoutY="125.0" text="Prioridad:"><font><Font name="Segoe UI" size="14.0" /></font></Label>
+                              <Label layoutX="18.0" layoutY="159.0" text="Estado:"><font><Font name="Segoe UI" size="14.0" /></font></Label>
+                              <Label layoutX="18.0" layoutY="193.0" text="Compartida con:"><font><Font name="Segoe UI" size="14.0" /></font></Label>
+                           </children>
+                        </AnchorPane>
+                     </placeholder>
+                  </ListView>
+               </children>
+            </AnchorPane>
+
+            <AnchorPane layoutX="328.0" layoutY="1033.0" prefHeight="47.0" prefWidth="1592.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;">
+               <children>
+                  <Label layoutX="720.0" layoutY="10.0" styleClass="text-footer" text="© 2026 TaskMind" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Line endX="327.0" endY="47.0" startY="47.0" styleClass="sidebar-line" />
+      <Line endX="326.5" endY="414.0" startX="0.0" startY="414.0" styleClass="sidebar-line" />
+      <Line endX="326.5" endY="578.8333129882812" startX="0.0" startY="578.8333129882812" styleClass="sidebar-line" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
+

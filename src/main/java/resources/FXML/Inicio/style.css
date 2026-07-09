@@ -1,0 +1,47 @@
+
+/* Fondo principal */
+.main-background {
+    -fx-background-color: linear-gradient(to bottom, #FFFFFF 0%, #F8F9FA 100%);
+}
+
+
+/* Boton de la barra superior */
+.topbar-button {
+    -fx-background-color: linear-gradient(to bottom, #0B2745 0%, #1F4A7A 100%);
+    -fx-border-color: #000000;
+    -fx-border-width: 1;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.topbar-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #12365F 0%, #27598E 100%);
+    -fx-cursor: hand;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.topbar-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #071E38 0%, #163A6B 100%);
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+/* Tarjetas / cuadros */
+.option-card {
+    -fx-background-color: linear-gradient(to bottom, #FFFFFF 0%, #F4F7FA 100%);
+    -fx-border-color: #111111;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(11,39,69,0.24), 12, 0, 0, 4);
+}
+
+/* Iconos de barra superior */
+.topbar-icon {
+    -fx-fill: transparent;
+    -fx-stroke: #0B2745;
+    -fx-stroke-width: 2;
+}
