@@ -1,0 +1,75 @@
+@startuml
+package modelo {
+    enum Estado {
+        PENDIENTE
+        EN_PROGRESO
+        COMPLETADA
+        CANCELADA
+        + getEtiqueta() : String
+    }
+
+    abstract class Usuario {
+        # nombre : String
+        + Usuario(nombre : String)
+        + getNombre() : String
+        + mostrarTipo() : void
+    }
+
+    class UsuarioClasico {
+        - LIMITE_TAREAS : int
+        + UsuarioClasico(nombre : String)
+        + mostrarTipo() : void
+    }
+
+    class UsuarioPremium {
+        + UsuarioPremium(nombre : String)
+        + mostrarTipo() : void
+    }
+
+    class Tarea {
+        - titulo : String
+        - descripcion : String
+        - estado : Estado
+        - prioridad : String
+        - creador : Usuario
+        - usuariosCompartidos : List<Usuario>
+        + Tarea(titulo : String, descripcion : String, estado : Estado, prioridad : String, creador : Usuario)
+        + getTitulo() : String
+        + getDescripcion() : String
+        + getEstado() : Estado
+        + getPrioridad() : String
+        + getCreador() : Usuario
+        + getUsuariosCompartidos() : List<Usuario>
+        + cambiarEstado(nuevoEstado : Estado) : void
+        + compartirTarea(usuario : Usuario) : void
+        + mostrar() : void
+        # getTipoElemento() : String
+        # mostrarDetallesAdicionales() : void
+        # imprimirCampo(etiqueta : String, valor : String) : void
+    }
+
+    class Recordatorio {
+        - fechaHora : String
+        + Recordatorio(titulo : String, descripcion : String, fechaHora : String, creador : Usuario)
+        # getTipoElemento() : String
+        # mostrarDetallesAdicionales() : void
+    }
+
+    class Main {
+        + main(args : String[]) : void
+    }
+}
+
+Usuario <|-- UsuarioClasico
+Usuario <|-- UsuarioPremium
+Tarea <|-- Recordatorio
+Tarea --> Estado
+Tarea --> Usuario : creada por
+Tarea "1" o-- "0..*" Usuario : comparte con
+Main ..> Usuario
+Main ..> UsuarioClasico
+Main ..> UsuarioPremium
+Main ..> Tarea
+Main ..> Recordatorio
+Main ..> Estado
+@enduml

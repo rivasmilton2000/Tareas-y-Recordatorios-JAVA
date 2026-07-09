@@ -1,0 +1,118 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
+  <diagram name="Página-1" id="GfKXj5m2URno1zxVxd0w">
+    <mxGraphModel dx="2468" dy="611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MoluntFRrBoldx40xcBQ-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="App" vertex="1">
+          <mxGeometry height="240" width="340" x="10" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-2" parent="MoluntFRrBoldx40xcBQ-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- escenarioPrincipal: Stage&lt;br&gt;- gestorUsuarios: GestorUsuarios&lt;br&gt;- gestorActividades: GestorActividades&lt;br&gt;- usuarioActual: Usuario" vertex="1">
+          <mxGeometry height="70" width="340" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-3" parent="MoluntFRrBoldx40xcBQ-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="10" width="340" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-4" parent="MoluntFRrBoldx40xcBQ-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ start(escenario: Stage): void&lt;br&gt;+ main(args: String[]): void&lt;br&gt;+ mostrarLogin(): void&lt;br&gt;+ mostrarRegistro(): void&lt;br&gt;+ mostrarPanelPrincipal(usuario: Usuario): void&lt;br&gt;+ cerrarSesion(): void&lt;br&gt;- cargarVista(rutaFXML: String): Parent&lt;br&gt;- cambiarEscena(rutaFXML: String): void" vertex="1">
+          <mxGeometry height="130" width="340" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-5" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="LoginController" vertex="1">
+          <mxGeometry height="230" width="340" x="-560" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-6" parent="MoluntFRrBoldx40xcBQ-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- app: App&lt;br&gt;- gestorUsuarios: GestorUsuarios&lt;br&gt;- campoCorreo: TextField&lt;br&gt;- campoClave: PasswordField&lt;br&gt;- etiquetaMensaje: Label&lt;div&gt;- gestorUsuarios: GestorUsuarios&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="340" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-7" parent="MoluntFRrBoldx40xcBQ-5" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="10" width="340" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-8" parent="MoluntFRrBoldx40xcBQ-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ inicializar(): void&lt;br&gt;+ iniciarSesion(): void&lt;br&gt;+ abrirRegistro(): void&lt;br&gt;- validarCampos(): boolean&lt;br&gt;- mostrarMensaje(mensaje: String): void" vertex="1">
+          <mxGeometry height="90" width="340" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-10" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;br&gt;Application" vertex="1">
+          <mxGeometry height="80" width="340" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-11" parent="MoluntFRrBoldx40xcBQ-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ start(escenario: Stage): void&lt;br&gt;+ launch(args: String[]): void {static}" vertex="1">
+          <mxGeometry height="40" width="340" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-14" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="RegistroController" vertex="1">
+          <mxGeometry height="230" width="340" x="-200" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-15" parent="MoluntFRrBoldx40xcBQ-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- app: App&lt;br&gt;- campoNombre: TextField&lt;br&gt;- campoCorreo: TextField&lt;br&gt;- campoClave: PasswordField&lt;br&gt;- campoConfirmarClave: PasswordField&lt;br&gt;- selectorTipoUsuario: ComboBox&amp;lt;String&amp;gt;&lt;br&gt;- etiquetaMensaje: Label&lt;div&gt;- gestorUsuarios: GestorUsuarios&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="340" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-16" parent="MoluntFRrBoldx40xcBQ-14" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="10" width="340" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-17" parent="MoluntFRrBoldx40xcBQ-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ inicializar(): void&lt;br&gt;+ registrarUsuario(): void&lt;br&gt;+ volverLogin(): void&lt;br&gt;- validarCampos(): boolean&lt;br&gt;- mostrarMensaje(mensaje: String): void" vertex="1">
+          <mxGeometry height="70" width="340" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-18" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="PanelPrincipalController" vertex="1">
+          <mxGeometry height="390" width="340" x="520" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-19" parent="MoluntFRrBoldx40xcBQ-18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- app: App&lt;br&gt;- usuarioActual: Usuario&lt;br&gt;- tablaActividades: TableView&amp;lt;Actividad&amp;gt;&lt;br&gt;- columnaTitulo: TableColumn&amp;lt;Actividad, String&amp;gt;&lt;br&gt;- columnaTipo: TableColumn&amp;lt;Actividad, String&amp;gt;&lt;br&gt;- columnaPrioridad: TableColumn&amp;lt;Actividad, String&amp;gt;&lt;br&gt;- columnaEstado: TableColumn&amp;lt;Actividad, String&amp;gt;&lt;br&gt;- etiquetaUsuario: Label&lt;br&gt;- etiquetaMensaje: Label&lt;div&gt;- gestorUsuarios: GestorUsuarios&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="340" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-20" parent="MoluntFRrBoldx40xcBQ-18" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="10" width="340" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-21" parent="MoluntFRrBoldx40xcBQ-18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ inicializar(): void&lt;br&gt;+ cargarUsuario(usuario: Usuario): void&lt;br&gt;+ cargarActividades(): void&lt;br&gt;+ crearActividad(): void&lt;br&gt;+ editarActividad(): void&lt;br&gt;+ eliminarActividad(): void&lt;br&gt;+ compartirActividad(): void&lt;br&gt;+ ordenarPorFecha(): void&lt;br&gt;+ ordenarPorPrioridad(): void&lt;br&gt;+ filtrarPendientes(): void&lt;br&gt;+ cerrarSesion(): void&lt;br&gt;- obtenerActividadSeleccionada(): Actividad&lt;br&gt;- mostrarMensaje(mensaje: String): void" vertex="1">
+          <mxGeometry height="200" width="340" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-22" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="FormularioActividadController" vertex="1">
+          <mxGeometry height="330" width="340" x="160" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-23" parent="MoluntFRrBoldx40xcBQ-22" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- app: App&lt;br&gt;- usuarioActual: Usuario&lt;br&gt;- actividadEditar: Actividad&lt;br&gt;- campoTitulo: TextField&lt;br&gt;- areaDescripcion: TextArea&lt;br&gt;- selectorTipo: ComboBox&amp;lt;String&amp;gt;&lt;br&gt;- selectorPrioridad: ComboBox&amp;lt;Prioridad&amp;gt;&lt;br&gt;- selectorEstado: ComboBox&amp;lt;Estado&amp;gt;&lt;br&gt;- selectorFecha: DatePicker&lt;br&gt;- etiquetaMensaje: Label&lt;div&gt;- gestorUsuarios: GestorUsuarios&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="340" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-24" parent="MoluntFRrBoldx40xcBQ-22" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="10" width="340" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-25" parent="MoluntFRrBoldx40xcBQ-22" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ inicializar(): void&lt;br&gt;+ cargarUsuario(usuario: Usuario): void&lt;br&gt;+ cargarActividad(actividad: Actividad): void&lt;br&gt;+ guardarActividad(): void&lt;br&gt;+ cancelar(): void&lt;br&gt;- validarCampos(): boolean&lt;br&gt;- mostrarCamposSegunTipo(): void&lt;br&gt;- mostrarMensaje(mensaje: String): void" vertex="1">
+          <mxGeometry height="130" width="340" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-26" edge="1" parent="1" source="MoluntFRrBoldx40xcBQ-1" style="endArrow=block;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.501;entryY=1.043;entryDx=0;entryDy=0;entryPerimeter=0;" target="MoluntFRrBoldx40xcBQ-11" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="10" y="300" as="sourcePoint" />
+            <mxPoint x="180" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-28" edge="1" parent="1" source="MoluntFRrBoldx40xcBQ-2" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.529;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" target="MoluntFRrBoldx40xcBQ-5" value="carga">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="-380" y="200" />
+            </Array>
+            <mxPoint x="-30" y="200" as="sourcePoint" />
+            <mxPoint x="-380" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-29" edge="1" parent="1" source="MoluntFRrBoldx40xcBQ-2" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.529;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" value="carga">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="200" />
+            </Array>
+            <mxPoint x="1080" y="200" as="sourcePoint" />
+            <mxPoint x="690" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-30" edge="1" parent="1" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.235;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;" target="MoluntFRrBoldx40xcBQ-14" value="carga">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="-120" y="280" />
+            </Array>
+            <mxPoint x="10" y="280" as="sourcePoint" />
+            <mxPoint x="-220" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MoluntFRrBoldx40xcBQ-31" edge="1" parent="1" source="MoluntFRrBoldx40xcBQ-4" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.235;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.001;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" value="carga">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="280" />
+            </Array>
+            <mxPoint x="580" y="280" as="sourcePoint" />
+            <mxPoint x="450" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
